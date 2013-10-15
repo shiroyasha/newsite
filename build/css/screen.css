@@ -1,0 +1,182 @@
+/* line 10, ../../src/sass/screen.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 12, ../../src/sass/screen.scss */
+body {
+  font-family: "Gentium Basic";
+  margin: 0;
+  background-image: url(/images/geometry.png);
+}
+
+/* line 18, ../../src/sass/screen.scss */
+.content {
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 36px;
+  margin: auto;
+  margin-top: 72px;
+  color: #404040;
+}
+
+/* line 30, ../../src/sass/screen.scss */
+article h1 {
+  font-size: 36px;
+  line-height: 54px;
+}
+/* line 35, ../../src/sass/screen.scss */
+article .text {
+  margin: auto;
+}
+/* line 39, ../../src/sass/screen.scss */
+article strong {
+  color: #679037;
+}
+
+/* line 44, ../../src/sass/screen.scss */
+.line {
+  border-bottom: 1px solid rgba(64, 64, 64, 0.3);
+  margin: 48px 0;
+}
+
+/* line 51, ../../src/sass/screen.scss */
+header .picture {
+  background-image: url(http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/388633_500501066659708_11646875_n.jpg);
+  background-position: 76% 100%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin: auto;
+}
+/* line 60, ../../src/sass/screen.scss */
+header h1 {
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: #404040;
+}
+/* line 67, ../../src/sass/screen.scss */
+header h1 + p {
+  font-weight: 600;
+  margin-top: -24px;
+  text-align: center;
+  font-size: 24px;
+  color: #679037;
+}
+
+/* line 76, ../../src/sass/screen.scss */
+footer {
+  background-color: #202020;
+  padding: 24px 0;
+}
+/* line 80, ../../src/sass/screen.scss */
+footer ul.social-links {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 85, ../../src/sass/screen.scss */
+footer ul.social-links li {
+  display: inline-block;
+  font-size: 48px;
+  padding: 12px;
+}
+/* line 90, ../../src/sass/screen.scss */
+footer ul.social-links li a {
+  text-decoration: none;
+  color: #ccc;
+}
+/* line 97, ../../src/sass/screen.scss */
+footer .message {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+/* line 104, ../../src/sass/screen.scss */
+footer .message i {
+  color: #679037;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 320px) {
+  /* line 112, ../../src/sass/screen.scss */
+  .content {
+    margin-top: 5px;
+  }
+  /* line 115, ../../src/sass/screen.scss */
+  .content article h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 450px) {
+  /* line 123, ../../src/sass/screen.scss */
+  .content {
+    padding: 0 36px;
+  }
+  /* line 126, ../../src/sass/screen.scss */
+  .content article h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 750px) {
+  /* line 134, ../../src/sass/screen.scss */
+  .content {
+    width: 80%;
+  }
+  /* line 136, ../../src/sass/screen.scss */
+  .content article {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 959px) {
+  /* line 145, ../../src/sass/screen.scss */
+  .content {
+    overflow: hidden;
+    *zoom: 1;
+    width: 100%;
+    margin-top: 36px;
+  }
+  /* line 151, ../../src/sass/screen.scss */
+  .content header, .content article {
+    float: left;
+    width: 50%;
+  }
+  /* line 156, ../../src/sass/screen.scss */
+  .content header {
+    padding-top: 72px;
+  }
+  /* line 159, ../../src/sass/screen.scss */
+  .content header .line {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 169, ../../src/sass/screen.scss */
+  .content {
+    overflow: hidden;
+    *zoom: 1;
+    width: 960px;
+    margin-top: 36px;
+    margin-bottom: 72px;
+  }
+  /* line 176, ../../src/sass/screen.scss */
+  .content header, .content article {
+    float: left;
+    width: 50%;
+  }
+  /* line 181, ../../src/sass/screen.scss */
+  .content header {
+    padding-top: 72px;
+  }
+  /* line 184, ../../src/sass/screen.scss */
+  .content header .line {
+    display: none;
+  }
+}

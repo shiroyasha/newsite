@@ -1,0 +1,192 @@
+@import "compass";
+
+$baseFontSize: 24px;
+$baseLineHeight: $baseFontSize * 1.5;
+$color-gray-1: #404040;
+$color-gray-2: #202020;
+$color-green: #679037;
+$color-orange: #ed9a23;
+
+.clearfix { @include clearfix(); }
+
+body {
+  font-family: "Gentium Basic";
+  margin: 0;
+  background-image: url(/images/geometry.png);
+}
+
+.content {
+  padding: $baseFontSize/2;
+  box-sizing: border-box;
+
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  margin: auto;
+  margin-top: $baseLineHeight*2;
+  color: $color-gray-1;
+}
+
+article {
+  h1 {
+    font-size: $baseFontSize*1.5;
+    line-height: $baseLineHeight*1.5;
+  }
+
+  .text {
+    margin: auto;
+  }
+
+  strong {
+    color: $color-green;
+  }
+}
+
+.line {
+  border-bottom: 1px solid rgba($color-gray-1, 0.3);
+  margin: $baseFontSize*2 0;
+}
+
+header {
+
+  .picture {
+    background-image: url(http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/388633_500501066659708_11646875_n.jpg);
+    background-position: 76% 100%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: $baseFontSize*2;
+    line-height: 1.5;
+    text-align: center;
+    color: $color-gray-1;
+  }
+
+  h1 + p {
+    font-weight: 600;
+    margin-top: -24px;
+    text-align: center;
+    font-size: 24px;
+    color: $color-green;
+  }
+}
+
+footer {
+  background-color: $color-gray-2;
+  padding: $baseFontSize 0;
+
+  ul.social-links {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      font-size: $baseFontSize*2;
+      padding: $baseFontSize/2;
+
+      a {
+        text-decoration: none;
+        color: #ccc;
+      }
+    }
+  }
+
+  .message {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+
+    i {
+      color: $color-green;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+  	margin-top: 5px;
+    article {
+    	h1 {
+    		font-size: $baseFontSize*1.5 - 2;
+    	}
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 450px) {
+  .content {
+  	padding: 0 $baseLineHeight;
+    article {
+    	h1 {
+    		font-size: $baseFontSize*1.5 - 2;
+    	}
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 750px) {
+  .content {
+  	width: 80%;
+    article {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 959px) {
+  .content {
+    @include clearfix();
+
+  	width: 100%;
+    margin-top: $baseLineHeight;
+
+    header, article {
+      float: left;
+      width: 50%;
+    }
+
+    header {
+      padding-top: $baseLineHeight*2;
+
+      .line {
+        display: none;
+      }
+
+    }
+
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .content {
+    @include clearfix();
+
+    width: 960px;
+    margin-top: $baseLineHeight;
+    margin-bottom: $baseLineHeight*2;
+
+    header, article {
+      float: left;
+      width: 50%;
+    }
+
+    header {
+      padding-top: $baseLineHeight*2;
+
+      .line {
+        display: none;
+      }
+
+    }
+
+  }
+}
+
